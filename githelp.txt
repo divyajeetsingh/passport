@@ -1,0 +1,62 @@
+sample testing with git
+
+
+C:\Users\divyajeet_singh\Desktop\base\google>git init
+Reinitialized existing Git repository in C:/Users/divyajeet_singh/Desktop/base/google/.git/
+
+C:\Users\divyajeet_singh\Desktop\base\google>code google.txt
+
+C:\Users\divyajeet_singh\Desktop\base\google>git add google.txt
+
+C:\Users\divyajeet_singh\Desktop\base\google>git commit -m "ffknf'
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+C:\Users\divyajeet_singh\Desktop\base\google>git remote add origin https://github.com/divyajeetsingh/php_sample.git
+fatal: remote origin already exists.
+
+C:\Users\divyajeet_singh\Desktop\base\google>git push -u  origin  master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com':
+
+
+///git integration global  command  
+
+git status  
+
+git config  --global user.name 'divyajeetsingh'
+git config --global user.email "your_email@example.com"
+
+///git integration local command  
+
+
+
+git config  --local user.name 'divyajeetsingh'
+
+git config --local user.email "your_email@example.com"
+
+
+//creating new branch in  git  
+
+git  branch  -b  "barnch_name"
+
+//check  branch list 
+
+git branch  
+
+
+//git configuration list  
+
+git  config  --list
+
+
+//remove from current barnch 
+
+git checkout 
+
+
+
+//
+
