@@ -1,0 +1,79 @@
+<ion-header>
+  <app-header></app-header>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="marginal" style=" background-color:  #DFEEF7 ;  border-bottom: #a0a0a0">
+    <ion-row>
+      <ion-col class="subcardImg" text-center>
+        <ion-label class="fixHeader">
+          Send location
+        </ion-label>
+      </ion-col>
+      <!-- <ion-labe></ion-labe> -->
+
+    </ion-row>
+    <ion-row>
+      <ion-col class="subcardImg">
+        <ion-label class="fixHeaderCustomBlue" (click)="navigateToCompany()">Cancel </ion-label>
+      </ion-col>
+      <ion-col class="subcardImg">
+
+      </ion-col>
+      <ion-col class="subcardImg">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <!-- <div>
+    <div #map style="height:100%;"></div>
+  </div> -->
+  <div id="map_canvas">
+    <ion-button ion-button (click)="onButtonClick()">Demo</ion-button>
+  </div>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-grid style=" background-color:  #DFEEF7 ;  border-bottom: #a0a0a0; padding: 0px;">
+    <ion-row style="border-top: 1px solid #a0a0a0; padding: 10px;">
+      <ion-col size="2" style=" padding: 0px;">
+        <img *ngIf="locationbutton" src='assets/img/circle.png' alt="..." (click)="checkbox_data('location')" class="smallIcon" style="height:25px ;  width :25px; object-fit: contain;">
+        <img *ngIf="!locationbutton" src='assets/img/circle-outline.png' alt="..." (click)="checkbox_data('location_outline')" class="smallIcon" style="height:25px ;  width :25px; object-fit: contain;">
+      </ion-col>
+      <ion-col class="subcardImg" text-left  style=" padding: 0px;">
+        <ion-row>
+          <ion-label class="fixHeader">
+            Send current location
+          </ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-label class="fixSubHeader">
+            Up to 50 m exact
+          </ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row style="border-top: 1px solid #a0a0a0; border-bottom: 1px solid #a0a0a0; padding: 10px;">
+      <ion-col size="2" style=" padding: 0px;">
+        <img *ngIf="mettingbutton" src='assets/img/location-search-filled.png' alt="..." class="smallIcon" (click)="checkbox_data('meeting_point_filled')" style="height:25px ;  width :25px; object-fit: contain;">
+        <img *ngIf="!mettingbutton" src='assets/img/location-search.png' alt="..." class="smallIcon" (click)="checkbox_data('meeting_point')" style="height:25px ;  width :25px; object-fit: contain;">
+      </ion-col>
+      <ion-col class="subcardImg" text-left  style=" padding: 0px;">
+        <ion-row>
+          <ion-label class="fixHeader">
+            Send meeting point
+          </ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-label class="fixSubHeader">
+            Up to 10 m exact
+          </ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-tabs-component></app-tabs-component>
+</ion-footer>
