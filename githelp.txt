@@ -58,5 +58,6 @@ git checkout
 
 
 
-//
+// Configure Remote origin  in git project . 
+git remote add origin  <REMOTE_URL> 
 
